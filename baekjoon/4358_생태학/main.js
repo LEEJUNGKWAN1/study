@@ -25,3 +25,28 @@ Object.keys(counts) //Object.keys(counts) : 종 이름들만 배열로 가져옴
     const percentage = ((counts[tree] / total) * 100).toFixed(4); //해당 종이 전체에서 차지하는 백분율을 구함
     console.log(`${tree} ${percentage}`); //결과를 "종이름 백분율" 형식으로 출력
   });
+
+// const fs = require("fs");
+// const input = fs
+//   .readFileSync("baekjoon/4358_생태학/input.txt")
+//   .toString()
+//   .trim()
+//   .split("\n");
+
+// const counts = new Map();
+// let total = 0;
+
+// for (let line of input) {
+//   const tree = line.trim();
+//   if (!tree) continue;
+
+//   counts.set(tree, (counts.get(tree) || 0) + 1);
+//   total++;
+// }
+
+// [...counts.entries()]
+//   .sort((a, b) => a[0].localeCompare(b[0])) // 사전순 정렬
+//   .forEach(([tree, count]) => {
+//     const percentage = ((count / total) * 100).toFixed(4);
+//     console.log(`${tree} ${percentage}`);
+//   });
