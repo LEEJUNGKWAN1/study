@@ -1,6 +1,6 @@
 const fs = require("fs");
 const input = fs
-  .readFileSync("JUNGKWAN/2309.txt")
+  .readFileSync("baekjoon/2309_일곱난쟁이/input.txt")
   .toString()
   .trim()
   .split("\n")

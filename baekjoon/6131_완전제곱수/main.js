@@ -1,5 +1,8 @@
 const fs = require("fs");
-const input = fs.readFileSync("JUNGKWAN/6131.txt").toString().split("\n");
+const input = fs
+  .readFileSync("baekjoon/6131_완전제곱수/input.txt")
+  .toString()
+  .split("\n");
 //const input = fs.readFileSync('/dev/stdin').toString().split("\n");
 
 console.log(baekJoon(parseInt(input)));

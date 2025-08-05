@@ -1,5 +1,8 @@
 const fs = require("fs");
-const input = fs.readFileSync("JUNGKWAN/17614.txt").toString().split("\n");
+const input = fs
+  .readFileSync("baekjoon/17614_369/input.txt")
+  .toString()
+  .split("\n");
 
 const N = parseInt(input); //input은 문자열이므로 숫자(정수)로 변환
 
